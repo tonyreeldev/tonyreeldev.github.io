@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonel Rubira Quimi - Analista de Soporte Técnico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg">
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="digit">1</div>
+        <div class="digit">0</div>
+        <div class="digit">1</div>
+        <div class="glow"></div>
+    </div>
+
+    <!-- Dark Mode Toggle -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <span class="icon">🌓</span>
+        <span class="label">Modo Oscuro</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Circuit Background -->
+        <div class="circuit-bg">
+            <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="chipGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#2d2d2d"></stop>
+                        <stop offset="100%" stop-color="#0f0f0f"></stop>
+                    </linearGradient>
+
+                    <linearGradient id="textGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#eeeeee"></stop>
+                        <stop offset="100%" stop-color="#888888"></stop>
+                    </linearGradient>
+
+                    <linearGradient id="pinGradient" x1="1" y1="0" x2="0" y2="0">
+                        <stop offset="0%" stop-color="#bbbbbb"></stop>
+                        <stop offset="50%" stop-color="#888888"></stop>
+                        <stop offset="100%" stop-color="#555555"></stop>
+                    </linearGradient>
+                </defs>
+
+                <g id="traces">
+                    <path d="M100 100 H200 V210 H326" class="trace-bg"></path>
+                    <path d="M100 100 H200 V210 H326" class="trace-flow purple"></path>
+
+                    <path d="M80 180 H180 V230 H326" class="trace-bg"></path>
+                    <path d="M80 180 H180 V230 H326" class="trace-flow blue"></path>
+
+                    <path d="M60 260 H150 V250 H326" class="trace-bg"></path>
+                    <path d="M60 260 H150 V250 H326" class="trace-flow yellow"></path>
+
+                    <path d="M100 350 H200 V270 H326" class="trace-bg"></path>
+                    <path d="M100 350 H200 V270 H326" class="trace-flow green"></path>
+
+                    <path d="M700 90 H560 V210 H474" class="trace-bg"></path>
+                    <path d="M700 90 H560 V210 H474" class="trace-flow blue"></path>
+
+                    <path d="M740 160 H580 V230 H474" class="trace-bg"></path>
+                    <path d="M740 160 H580 V230 H474" class="trace-flow green"></path>
+
+                    <path d="M720 250 H590 V250 H474" class="trace-bg"></path>
+                    <path d="M720 250 H590 V250 H474" class="trace-flow red"></path>
+
+                    <path d="M680 340 H570 V270 H474" class="trace-bg"></path>
+                    <path d="M680 340 H570 V270 H474" class="trace-flow yellow"></path>
+                </g>
+
+                <rect
+                    x="330"
+                    y="190"
+                    width="140"
+                    height="100"
+                    rx="20"
+                    ry="20"
+                    fill="url(#chipGradient)"
+                    stroke="#222"
+                    stroke-width="3"
+                    filter="drop-shadow(0 0 6px rgba(0,0,0,0.8))"
+                ></rect>
+
+                <g>
+                    <rect
+                        x="322"
+                        y="205"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                    <rect
+                        x="322"
+                        y="225"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                    <rect
+                        x="322"
+                        y="245"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                    <rect
+                        x="322"
+                        y="265"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                </g>
+
+                <g>
+                    <rect
+                        x="470"
+                        y="205"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                    <rect
+                        x="470"
+                        y="225"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                    <rect
+                        x="470"
+                        y="245"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                    <rect
+                        x="470"
+                        y="265"
+                        width="8"
+                        height="10"
+                        fill="url(#pinGradient)"
+                        rx="2"
+                    ></rect>
+                </g>
+
+                <text
+                    x="400"
+                    y="240"
+                    font-family="Arial, sans-serif"
+                    font-size="22"
+                    fill="url(#textGradient)"
+                    text-anchor="middle"
+                    alignment-baseline="middle"
+                >
+                    
+                </text>
+
+                <circle cx="100" cy="100" r="5" fill="black"></circle>
+                <circle cx="80" cy="180" r="5" fill="black"></circle>
+                <circle cx="60" cy="260" r="5" fill="black"></circle>
+                <circle cx="100" cy="350" r="5" fill="black"></circle>
+
+                <circle cx="700" cy="90" r="5" fill="black"></circle>
+                <circle cx="740" cy="160" r="5" fill="black"></circle>
+                <circle cx="720" cy="250" r="5" fill="black"></circle>
+                <circle cx="680" cy="340" r="5" fill="black"></circle>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <img src="./banner.png" alt="Professional Banner" class="hero-banner">
+            <div class="terminal-name">
+                <h1>Hola, Soy Leonel Rubira Quimi 👋</h1>
+            </div>
+            <p class="hero-subtitle">Analista de Soporte Técnico</p>
+            <div class="typing-container">
+                <span class="typing-text" id="typing-text"></span>
+            </div>
+        </div>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title"><span class="icon">👨🏻‍💻</span> Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <div class="icon">💼</div>
+                    <p>Actualmente trabajo en <strong>RP3 Retail</strong> como Analista de Soporte Técnico desde marzo 2015.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="icon">💡</div>
+                    <p>Me apasiona la administración de servidores, virtualización y soluciones tecnológicas empresariales.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="icon">🎓</div>
+                    <p>Estudiando Desarrollo de Software en el Instituto Superior Tecnológico Bolivariano De Tecnología.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="icon">🌱</div>
+                    <p>Continuamente actualizo mis conocimientos en Windows Server, Hyper-V, Veeam Backup y arquitectura de redes.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="icon">🔧</div>
+                    <p>Más de <strong>10 años de experiencia</strong> en soporte técnico, administración de infraestructura TI y atención al cliente.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <div class="icon">✉️</div>
+                    <p>Disponible para consultas sobre administración de servidores Windows, virtualización y respaldos empresariales.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills Section (Alternate Background) -->
+    <div class="section-1">
+        <div class="container">
+            <section id="skills">
+                <h2 class="section-title"><span class="icon">⚡</span> Tecnologías y Herramientas</h2>
+            
+            <div class="skills-category fade-in">
+                <h3>Sistemas Operativos y Servidores</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows">
+                        <span>Windows</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                        <span>Linux</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg" alt="Hyper-V">
+                        <span>Hyper-V</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3>Bases de Datos</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server">
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3>Lenguajes de Programación</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3>Diseño Gráfico y Multimedia</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
+                        <span>Illustrator</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" alt="After Effects">
+                        <span>After Effects</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" alt="Adobe">
+                        <span>Adobe</span>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="container">
+        <section id="experience">
+            <h2 class="section-title"><span class="icon">💼</span> Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Analista de Soporte Técnico</h3>
+                        <p class="company">RP3 Retail</p>
+                        <span class="period">Marzo 2015 - Presente</span>
+                        <ul>
+                            <li>Soporte técnico a usuarios y administración de equipos de cómputo</li>
+                            <li>Administración e instalación de Servidores Windows Server</li>
+                            <li>Configuración y administración de Base de Datos SQL Server</li>
+                            <li>Gestión de respaldos con Veeam Backup y Hyper-V</li>
+                            <li>Administración de servidores QNAP para almacenamiento empresarial</li>
+                            <li>Configuración y preparación de equipos para usuarios finales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Técnico en Mantenimiento</h3>
+                        <p class="company">SONDA del Ecuador</p>
+                        <span class="period">Diciembre 2011 - Diciembre 2012</span>
+                        <ul>
+                            <li>Soporte técnico y mantenimiento preventivo de equipos</li>
+                            <li>Gestión de garantías y reparación de hardware</li>
+                            <li>Atención directa a usuarios finales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Analista Técnico</h3>
+                        <p class="company">Farcomed (FYBECA)</p>
+                        <span class="period">Noviembre 2009 - Octubre 2011</span>
+                        <ul>
+                            <li>Mantenimiento correctivo de equipos de cómputo</li>
+                            <li>Instalación y configuración de servidores y equipos especializados</li>
+                            <li>Soporte técnico a nivel empresarial</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <h3>Técnico</h3>
+                        <p class="company">EBC - Coca Cola</p>
+                        <span class="period">Noviembre 2007 - Noviembre 2008</span>
+                        <ul>
+                            <li>Soporte en aplicaciones empresariales: Basis, Sigma, Lotus Notes</li>
+                            <li>Gestión de backups en tiempo real</li>
+                            <li>Desarrollo de soluciones tecnológicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Education Section (Alternate Background) -->
+    <div class="section-2">
+        <div class="container">
+            <section id="education">
+                <h2 class="section-title"><span class="icon">🎓</span> Educación y Certificaciones</h2>
+            
+            <div class="education-grid" style="margin-bottom: 40px;">
+                <div class="education-card fade-in">
+                    <h3>📚 Desarrollo de Software</h3>
+                    <p class="institution">Instituto Superior Tecnológico Bolivariano De Tecnología</p>
+                    <p class="year">2024 - Presente (En Curso)</p>
+                </div>
+                <div class="education-card fade-in">
+                    <h3>📚 Programador en Sistemas</h3>
+                    <p class="institution">ESPOL</p>
+                    <p class="year">2003 (Abandonado)</p>
+                </div>
+            </div>
+
+            <h3 style="margin-bottom: 20px; color: var(--text-primary);">🏆 Certificaciones y Cursos</h3>
+            <div class="certifications-list fade-in">
+                <div class="certification-item">
+                    <span class="icon">✅</span>
+                    <span>VEEAM Backup & Replication V12 Administration - Udemy</span>
+                    <span class="year">2024</span>
+                </div>
+                <div class="certification-item">
+                    <span class="icon">✅</span>
+                    <span>Windows Server 2019 Administration - Udemy</span>
+                    <span class="year">2023</span>
+                </div>
+                <div class="certification-item">
+                    <span class="icon">✅</span>
+                    <span>Arquitectura de Redes - Udemy</span>
+                    <span class="year">2023</span>
+                </div>
+                <div class="certification-item">
+                    <span class="icon">✅</span>
+                    <span>Virtualización con Hyper-V en Windows Server - Udemy</span>
+                    <span class="year">2022</span>
+                </div>
+                <div class="certification-item">
+                    <span class="icon">✅</span>
+                    <span>Certificación de Equipo HP</span>
+                    <span class="year">-</span>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <!-- Skills Levels Section -->
+    <div class="container">
+        <section id="skills-levels">
+            <h2 class="section-title"><span class="icon">🌟</span> Habilidades Técnicas</h2>
+            <div class="skills-levels">
+                <div class="level-card intermedio fade-in">
+                    <h3>Nivel Intermedio</h3>
+                    <ul>
+                        <li>Office Suite</li>
+                        <li>Herramientas Gráficas</li>
+                        <li>Software de Gestión</li>
+                        <li>Windows Server Administration</li>
+                        <li>HP Equipment Management</li>
+                    </ul>
+                </div>
+
+                <div class="level-card basico fade-in">
+                    <h3>Nivel Básico</h3>
+                    <ul>
+                        <li>HTML5, CSS3, Python, Java</li>
+                        <li>Adobe Illustrator, Photoshop, After Effects</li>
+                        <li>Affinity Designer</li>
+                        <li>Desarrollo de Software</li>
+                        <li>Inglés (Escrito y Oral)</li>
+                    </ul>
+                </div>
+
+                <div class="level-card especialidades fade-in">
+                    <h3>Especialidades</h3>
+                    <ul>
+                        <li>Administración Windows Server 2019</li>
+                        <li>Administración Hyper-V Windows Server</li>
+                        <li>Software de Edición de Audio y Video</li>
+                        <li>Sistemas Operativos multiplataforma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Quote Section (Alternate Background) -->
+    <div class="section-3">
+        <div class="container">
+            <section id="objective">
+                <div class="quote-section fade-in">
+                    <blockquote>
+                        Busco oportunidades que me desafíen y me permitan crecer profesionalmente en un entorno dinámico y colaborativo.
+                    </blockquote>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <section id="contact">
+            <h2 class="section-title"><span class="icon">📊</span> Información Personal</h2>
+            <div class="contact-grid">
+                <div class="contact-item fade-in">
+                    <div class="icon">📱</div>
+                    <div class="info">
+                        <div class="label">Teléfono</div>
+                        <div class="value">+593990122347</div>
+                    </div>
+                </div>
+                <div class="contact-item fade-in">
+                    <div class="icon">📧</div>
+                    <div class="info">
+                        <div class="label">Email</div>
+                        <div class="value">yaba09@gmail.com</div>
+                    </div>
+                </div>
+                <div class="contact-item fade-in">
+                    <div class="icon">📍</div>
+                    <div class="info">
+                        <div class="label">Ubicación</div>
+                        <div class="value">Guayaquil, Guayas, Ecuador</div>
+                    </div>
+                </div>
+                <div class="contact-item fade-in">
+                    <div class="icon">🎂</div>
+                    <div class="info">
+                        <div class="label">Fecha de Nacimiento</div>
+                        <div class="value">02-10-1982</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="justify-content: center;"><span class="icon">🤝🏻</span> Conecta Conmigo</h2>
+            <div class="social-links">
+                <a href="mailto:yaba09@gmail.com" class="social-link">
+                    <span class="icon">✉️</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/+593990122347" class="social-link">
+                    <span class="icon">💬</span>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+593990122347" class="social-link">
+                    <span class="icon">📞</span>
+                    <span>Llamar</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="tagline">💼 Profesional en TI | 🖥️ Administración de Servidores | ☁️ Virtualización | 💾 Respaldos Empresariales</p>
+        <p class="subtitle">Más de 10 años de experiencia proporcionando soluciones tecnológicas confiables</p>
+        
+        <div class="stats">
+            <img src="https://komarev.com/ghpvc/?username=leonelrubira&label=Visitas%20al%20Perfil&color=ff7b5c&style=flat" alt="Profile views">
+        </div>
+
+        <div class="credit">
+            <p>Creado por <a href="https://github.com/leonelrubira">Leonel Rubira Quimi</a></p>
+            <p>Última actualización: 06/11/2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const toggleLabel = document.querySelector('.theme-toggle .label');
+            toggleLabel.textContent = newTheme === 'dark' ? 'Modo Claro' : 'Modo Oscuro';
+        }
+
+        // Load saved theme
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            
+            if (savedTheme === 'dark') {
+                document.querySelector('.theme-toggle .label').textContent = 'Modo Claro';
+            }
+
+            // Typing animation
+            const typingTexts = [
+                'Analista de Soporte Técnico',
+                'Especialista en Windows Server',
+                'Administrador de Infraestructura TI',
+                '10+ Años de Experiencia'
+            ];
+            
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            const typingElement = document.getElementById('typing-text');
+            
+            function type() {
+                const currentText = typingTexts[textIndex];
+                
+                if (isDeleting) {
+                    typingElement.textContent = currentText.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingElement.textContent = currentText.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                let typeSpeed = isDeleting ? 50 : 100;
+                
+                if (!isDeleting && charIndex === currentText.length) {
+                    typeSpeed = 2000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % typingTexts.length;
+                    typeSpeed = 500;
+                }
+                
+                setTimeout(type, typeSpeed);
+            }
+            
+            type();
+
+            // Fade in on scroll
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
