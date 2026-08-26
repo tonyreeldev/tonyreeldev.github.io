@@ -1,610 +1,752 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonel Rubira Quimi - Analista de Soporte Técnico</title>
+    <title>Leonel Rubira Quimi | Analista de Soporte Técnico & Infraestructura TI</title>
+    <meta name="description" content="Hoja de Vida y Portafolio Profesional de Leonel Rubira Quimi - Más de 10 años de experiencia en administración de servidores Windows Server, Hyper-V, Veeam Backup, SQL Server y desarrollo de software.">
+    <meta name="keywords" content="Leonel Rubira, Soporte Técnico, Windows Server, Hyper-V, Veeam Backup, SQL Server, Android Studio, Guayaquil, Ecuador, Hoja de Vida, IT Support">
+    <meta name="author" content="Leonel Rubira Quimi">
+
+    <!-- Open Graph / Meta Social -->
+    <meta property="og:title" content="Leonel Rubira Quimi | Portafolio Profesional">
+    <meta property="og:description" content="Analista de Soporte Técnico & Administrador de Infraestructura TI con más de 10 años de experiencia.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Matrix Background -->
-    <div class="matrix-bg">
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="digit">1</div>
-        <div class="digit">0</div>
-        <div class="digit">1</div>
-        <div class="glow"></div>
-    </div>
 
-    <!-- Dark Mode Toggle -->
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
-        <span class="icon">🌓</span>
-        <span class="label">Modo Oscuro</span>
-    </button>
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <div class="brand-badge">LR</div>
+                <div class="brand-title">
+                    <span class="brand-name">Leonel Rubira</span>
+                    <span class="brand-role">TI & Infraestructura</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#skills" class="nav-link">Tecnologías</a></li>
+                    <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                    <li><a href="#education" class="nav-link">Educación</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="./Hoja_de_Vida_Leonel_Rubira.pdf" download="Hoja_de_Vida_Leonel_Rubira.pdf" class="btn btn-primary btn-sm" title="Descargar Hoja de Vida en PDF">
+                    <span>📄</span>
+                    <span>Descargar CV</span>
+                </a>
+                <button class="theme-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema claro u oscuro">
+                    <span class="icon">🌓</span>
+                    <span class="label" id="theme-label">Oscuro</span>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú de navegación">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <!-- Circuit Background -->
-        <div class="circuit-bg">
-            <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="chipGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#2d2d2d"></stop>
-                        <stop offset="100%" stop-color="#0f0f0f"></stop>
-                    </linearGradient>
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="status-pill">
+                        <span class="pulse-dot"></span>
+                        <span>Disponible para Nuevos Retos & Proyectos TI</span>
+                    </div>
 
-                    <linearGradient id="textGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#eeeeee"></stop>
-                        <stop offset="100%" stop-color="#888888"></stop>
-                    </linearGradient>
+                    <h1 class="hero-title">
+                        Hola, soy <span class="highlight">Leonel Rubira</span> 👋
+                    </h1>
 
-                    <linearGradient id="pinGradient" x1="1" y1="0" x2="0" y2="0">
-                        <stop offset="0%" stop-color="#bbbbbb"></stop>
-                        <stop offset="50%" stop-color="#888888"></stop>
-                        <stop offset="100%" stop-color="#555555"></stop>
-                    </linearGradient>
-                </defs>
+                    <p class="hero-subtitle">
+                        Analista de Soporte Técnico & Infraestructura TI
+                    </p>
 
-                <g id="traces">
-                    <path d="M100 100 H200 V210 H326" class="trace-bg"></path>
-                    <path d="M100 100 H200 V210 H326" class="trace-flow purple"></path>
+                    <!-- Animated Typing Terminal -->
+                    <div class="typing-box">
+                        <span class="typing-prefix">&gt;</span>
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor"></span>
+                    </div>
 
-                    <path d="M80 180 H180 V230 H326" class="trace-bg"></path>
-                    <path d="M80 180 H180 V230 H326" class="trace-flow blue"></path>
+                    <p class="hero-desc">
+                        Profesional con más de <strong>10 años de experiencia</strong> gestionando servidores empresariales <strong>Windows Server</strong>, virtualización con <strong>Hyper-V</strong>, respaldos con <strong>Veeam Backup</strong>, bases de datos <strong>SQL Server</strong> y desarrollo de software con <strong>Android Studio</strong>.
+                    </p>
 
-                    <path d="M60 260 H150 V250 H326" class="trace-bg"></path>
-                    <path d="M60 260 H150 V250 H326" class="trace-flow yellow"></path>
+                    <div class="hero-actions">
+                        <a href="#experience" class="btn btn-primary">
+                            <span>💼</span>
+                            <span>Ver Experiencia</span>
+                        </a>
+                        <a href="https://wa.me/593990122347" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <span>💬</span>
+                            <span>WhatsApp Directo</span>
+                        </a>
+                        <a href="./Hoja_de_Vida_Leonel_Rubira.pdf" download="Hoja_de_Vida_Leonel_Rubira.pdf" class="btn btn-secondary">
+                            <span>📥</span>
+                            <span>Descargar CV (PDF)</span>
+                        </a>
+                    </div>
 
-                    <path d="M100 350 H200 V270 H326" class="trace-bg"></path>
-                    <path d="M100 350 H200 V270 H326" class="trace-flow green"></path>
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <span class="icon">📍</span>
+                            <span>Guayaquil, Ecuador</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">📧</span>
+                            <span onclick="copyToClipboard('yaba09@gmail.com', 'Correo')" style="cursor:pointer;" title="Click para copiar">yaba09@gmail.com</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="icon">📱</span>
+                            <span onclick="copyToClipboard('+593990122347', 'Teléfono')" style="cursor:pointer;" title="Click para copiar">+593 99 012 2347</span>
+                        </div>
+                    </div>
+                </div>
 
-                    <path d="M700 90 H560 V210 H474" class="trace-bg"></path>
-                    <path d="M700 90 H560 V210 H474" class="trace-flow blue"></path>
-
-                    <path d="M740 160 H580 V230 H474" class="trace-bg"></path>
-                    <path d="M740 160 H580 V230 H474" class="trace-flow green"></path>
-
-                    <path d="M720 250 H590 V250 H474" class="trace-bg"></path>
-                    <path d="M720 250 H590 V250 H474" class="trace-flow red"></path>
-
-                    <path d="M680 340 H570 V270 H474" class="trace-bg"></path>
-                    <path d="M680 340 H570 V270 H474" class="trace-flow yellow"></path>
-                </g>
-
-                <rect
-                    x="330"
-                    y="190"
-                    width="140"
-                    height="100"
-                    rx="20"
-                    ry="20"
-                    fill="url(#chipGradient)"
-                    stroke="#222"
-                    stroke-width="3"
-                    filter="drop-shadow(0 0 6px rgba(0,0,0,0.8))"
-                ></rect>
-
-                <g>
-                    <rect
-                        x="322"
-                        y="205"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                    <rect
-                        x="322"
-                        y="225"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                    <rect
-                        x="322"
-                        y="245"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                    <rect
-                        x="322"
-                        y="265"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                </g>
-
-                <g>
-                    <rect
-                        x="470"
-                        y="205"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                    <rect
-                        x="470"
-                        y="225"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                    <rect
-                        x="470"
-                        y="245"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                    <rect
-                        x="470"
-                        y="265"
-                        width="8"
-                        height="10"
-                        fill="url(#pinGradient)"
-                        rx="2"
-                    ></rect>
-                </g>
-
-                <text
-                    x="400"
-                    y="240"
-                    font-family="Arial, sans-serif"
-                    font-size="22"
-                    fill="url(#textGradient)"
-                    text-anchor="middle"
-                    alignment-baseline="middle"
-                >
-                    
-                </text>
-
-                <circle cx="100" cy="100" r="5" fill="black"></circle>
-                <circle cx="80" cy="180" r="5" fill="black"></circle>
-                <circle cx="60" cy="260" r="5" fill="black"></circle>
-                <circle cx="100" cy="350" r="5" fill="black"></circle>
-
-                <circle cx="700" cy="90" r="5" fill="black"></circle>
-                <circle cx="740" cy="160" r="5" fill="black"></circle>
-                <circle cx="720" cy="250" r="5" fill="black"></circle>
-                <circle cx="680" cy="340" r="5" fill="black"></circle>
-            </svg>
-        </div>
-        <div class="hero-content">
-            <img src="./banner.png" alt="Professional Banner" class="hero-banner">
-            <div class="terminal-name">
-                <h1>Hola, Soy Leonel Rubira Quimi 👋</h1>
-            </div>
-            <p class="hero-subtitle">Analista de Soporte Técnico</p>
-            <div class="typing-container">
-                <span class="typing-text" id="typing-text"></span>
+                <div class="hero-right hero-card-wrapper">
+                    <div class="hero-card">
+                        <img src="./banner.png" alt="Leonel Rubira Quimi - Banner Profesional" class="hero-card-img">
+                        <div class="hero-card-footer">
+                            <span class="card-tag">🚀 Infraestructura & Soporte</span>
+                            <span class="card-rating">⭐ 10+ Años Exp.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="scroll-indicator">↓</div>
     </section>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title"><span class="icon">👨🏻‍💻</span> Sobre Mí</h2>
-            <div class="about-grid">
-                <div class="about-card fade-in">
-                    <div class="icon">💼</div>
-                    <p>Actualmente trabajo en <strong>RP3 Retail</strong> como Analista de Soporte Técnico desde marzo 2015.</p>
-                </div>
-                <div class="about-card fade-in">
-                    <div class="icon">💡</div>
-                    <p>Me apasiona la administración de servidores, virtualización y soluciones tecnológicas empresariales.</p>
-                </div>
-                <div class="about-card fade-in">
-                    <div class="icon">🎓</div>
-                    <p>Estudiando Desarrollo de Software en el Instituto Superior Tecnológico Bolivariano De Tecnología.</p>
-                </div>
-                <div class="about-card fade-in">
-                    <div class="icon">🌱</div>
-                    <p>Continuamente actualizo mis conocimientos en Windows Server, Hyper-V, Veeam Backup y arquitectura de redes.</p>
-                </div>
-                <div class="about-card fade-in">
-                    <div class="icon">🔧</div>
-                    <p>Más de <strong>10 años de experiencia</strong> en soporte técnico, administración de infraestructura TI y atención al cliente.</p>
-                </div>
-                <div class="about-card fade-in">
-                    <div class="icon">✉️</div>
-                    <p>Disponible para consultas sobre administración de servidores Windows, virtualización y respaldos empresariales.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Skills Section (Alternate Background) -->
-    <div class="section-1">
+    <!-- Key Metrics / Stats Section -->
+    <div class="stats-section">
         <div class="container">
-            <section id="skills">
-                <h2 class="section-title"><span class="icon">⚡</span> Tecnologías y Herramientas</h2>
-            
-            <div class="skills-category fade-in">
-                <h3>Sistemas Operativos y Servidores</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows">
-                        <span>Windows</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
-                        <span>Linux</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg" alt="Hyper-V">
-                        <span>Hyper-V</span>
-                    </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">+10</div>
+                    <div class="stat-label">Años de Experiencia TI</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+100</div>
+                    <div class="stat-label">Servidores & Equipos Gestionados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Confiabilidad en Respaldos Veeam</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Soporte y Continuidad Operativa</div>
                 </div>
             </div>
-
-            <div class="skills-category fade-in">
-                <h3>Bases de Datos</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server">
-                        <span>SQL Server</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                        <span>MySQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-category fade-in">
-                <h3>Lenguajes de Programación</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                        <span>Java</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-category fade-in">
-                <h3>Diseño Gráfico y Multimedia</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator">
-                        <span>Illustrator</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop">
-                        <span>Photoshop</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" alt="After Effects">
-                        <span>After Effects</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" alt="Adobe">
-                        <span>Adobe</span>
-                    </div>
-                </div>
-            </div>
-            </section>
         </div>
     </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conóceme</span>
+                <h2 class="section-title">
+                    <span class="section-icon">👨🏻‍💻</span> Sobre Mí
+                </h2>
+                <p class="section-desc">Comprometido con la optimización de procesos tecnológicos, alta disponibilidad y soporte proactivo a nivel empresarial.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="about-card-icon">💼</div>
+                    <h3 class="about-card-title">Trayectoria en RP3 Retail</h3>
+                    <p class="about-card-text">
+                        Trabajando como <strong>Analista de Soporte Técnico</strong> desde marzo de 2015, liderando la administración de infraestructura de servidores y atención a usuarios.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-icon">🖥️</div>
+                    <h3 class="about-card-title">Servidores & Virtualización</h3>
+                    <p class="about-card-text">
+                        Especialista en administración e implementación de <strong>Windows Server</strong>, máquinas virtuales en <strong>Hyper-V</strong> y almacenamiento centralizado <strong>QNAP NAS</strong>.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-icon">💾</div>
+                    <h3 class="about-card-title">Continuidad & Veeam Backup</h3>
+                    <p class="about-card-text">
+                        Gestión avanzada de planes de recuperación ante desastres (Disaster Recovery) y copias de seguridad continuas con <strong>Veeam Backup & Replication V12</strong>.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-icon">🎓</div>
+                    <h3 class="about-card-title">Desarrollo de Software</h3>
+                    <p class="about-card-text">
+                        Estudiante de Desarrollo de Software en el <strong>Instituto Superior Tecnológico Bolivariano</strong>, aplicando tecnologías móviles como <strong>Android Studio</strong> y programación orientada a objetos.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-icon">🗄️</div>
+                    <h3 class="about-card-title">Bases de Datos & Consultas</h3>
+                    <p class="about-card-text">
+                        Experiencia sólida administrando bases de datos empresariales en <strong>Microsoft SQL Server</strong>, realización de scripts, consultas, respaldos y mantenimiento.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="about-card-icon">🤝</div>
+                    <h3 class="about-card-title">Soporte Integral & Clientes</h3>
+                    <p class="about-card-text">
+                        Más de una década brindando soporte técnico de primer y segundo nivel, diagnóstico de hardware, configuración de estaciones de trabajo y comunicación efectiva.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Technologies Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stack Tecnológico</span>
+                <h2 class="section-title">
+                    <span class="section-icon">⚡</span> Tecnologías y Herramientas
+                </h2>
+                <p class="section-desc">Herramientas, plataformas y entornos que domino para garantizar soluciones tecnológicas eficientes y seguras.</p>
+            </div>
+
+            <div class="skills-categories-grid">
+                
+                <!-- Categoría: Servidores y Virtualización -->
+                <div class="skills-category-card reveal">
+                    <div class="category-header">
+                        <span class="category-icon">🖥️</span>
+                        <h3 class="category-title">Sistemas & Servidores</h3>
+                    </div>
+                    <div class="tech-items-grid">
+                        <div class="tech-item featured">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Server" class="tech-icon">
+                            <span class="tech-name">Windows Server</span>
+                            <span class="tech-level-tag">Avanzado</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg" alt="Hyper-V" class="tech-icon">
+                            <span class="tech-name">Hyper-V</span>
+                            <span class="tech-level-tag">Avanzado</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="tech-icon">
+                            <span class="tech-name">Linux</span>
+                            <span class="tech-level-tag">Intermedio</span>
+                        </div>
+                        <div class="tech-item featured">
+                            <img src="https://www.vectorlogo.zone/logos/veeam/veeam-icon.svg" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg'" alt="Veeam Backup" class="tech-icon">
+                            <span class="tech-name">Veeam Backup</span>
+                            <span class="tech-level-tag">V12 Cert.</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://www.vectorlogo.zone/logos/qnap/qnap-icon.svg" onerror="this.src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg'" alt="QNAP NAS" class="tech-icon">
+                            <span class="tech-name">QNAP NAS</span>
+                            <span class="tech-level-tag">Gestión</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoría: Desarrollo y Móvil (Incluye Android Studio) -->
+                <div class="skills-category-card reveal">
+                    <div class="category-header">
+                        <span class="category-icon">📱</span>
+                        <h3 class="category-title">Desarrollo & Móvil</h3>
+                    </div>
+                    <div class="tech-items-grid">
+                        <div class="tech-item featured">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" class="tech-icon">
+                            <span class="tech-name">Android Studio</span>
+                            <span class="tech-level-tag">Móvil</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon">
+                            <span class="tech-name">Java</span>
+                            <span class="tech-level-tag">OOP</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                            <span class="tech-name">Python</span>
+                            <span class="tech-level-tag">Scripts</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
+                            <span class="tech-name">HTML5</span>
+                            <span class="tech-level-tag">Web</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
+                            <span class="tech-name">CSS3</span>
+                            <span class="tech-level-tag">Estilos</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tech-icon">
+                            <span class="tech-name">VS Code</span>
+                            <span class="tech-level-tag">IDE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoría: Bases de Datos -->
+                <div class="skills-category-card reveal">
+                    <div class="category-header">
+                        <span class="category-icon">🗄️</span>
+                        <h3 class="category-title">Bases de Datos</h3>
+                    </div>
+                    <div class="tech-items-grid">
+                        <div class="tech-item featured">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="tech-icon">
+                            <span class="tech-name">SQL Server</span>
+                            <span class="tech-level-tag">Avanzado</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon">
+                            <span class="tech-name">MySQL</span>
+                            <span class="tech-level-tag">Intermedio</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tech-icon">
+                            <span class="tech-name">PostgreSQL</span>
+                            <span class="tech-level-tag">Intermedio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoría: Diseño Gráfico & Herramientas -->
+                <div class="skills-category-card reveal">
+                    <div class="category-header">
+                        <span class="category-icon">🎨</span>
+                        <h3 class="category-title">Diseño & Multimedia</h3>
+                    </div>
+                    <div class="tech-items-grid">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="tech-icon">
+                            <span class="tech-name">Photoshop</span>
+                            <span class="tech-level-tag">Edición</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" alt="Illustrator" class="tech-icon">
+                            <span class="tech-name">Illustrator</span>
+                            <span class="tech-level-tag">Vectorial</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" alt="After Effects" class="tech-icon">
+                            <span class="tech-name">After Effects</span>
+                            <span class="tech-level-tag">Animación</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" alt="Adobe Suite" class="tech-icon">
+                            <span class="tech-name">Adobe Suite</span>
+                            <span class="tech-level-tag">Gráfico</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Experience Section -->
-    <div class="container">
-        <section id="experience">
-            <h2 class="section-title"><span class="icon">💼</span> Experiencia Profesional</h2>
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Historial Laboral</span>
+                <h2 class="section-title">
+                    <span class="section-icon">💼</span> Experiencia Profesional
+                </h2>
+                <p class="section-desc">Más de una década resolviendo desafíos de infraestructura tecnológica en empresas líderes.</p>
+            </div>
+
             <div class="timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Analista de Soporte Técnico</h3>
-                        <p class="company">RP3 Retail</p>
-                        <span class="period">Marzo 2015 - Presente</span>
-                        <ul>
-                            <li>Soporte técnico a usuarios y administración de equipos de cómputo</li>
-                            <li>Administración e instalación de Servidores Windows Server</li>
-                            <li>Configuración y administración de Base de Datos SQL Server</li>
-                            <li>Gestión de respaldos con Veeam Backup y Hyper-V</li>
-                            <li>Administración de servidores QNAP para almacenamiento empresarial</li>
-                            <li>Configuración y preparación de equipos para usuarios finales</li>
+
+                <!-- Experiencia 1: RP3 Retail -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot current"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Analista de Soporte Técnico</h3>
+                                <div class="company-name">🏢 RP3 Retail</div>
+                            </div>
+                            <span class="timeline-period">Marzo 2015 — Presente</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Administración, instalación y mantenimiento de servidores corporativos en entornos <strong>Windows Server</strong>.</li>
+                            <li>Configuración, monitoreo y mantenimiento de bases de datos <strong>Microsoft SQL Server</strong>.</li>
+                            <li>Implementación de directivas de respaldo automatizado y recuperación con <strong>Veeam Backup & Replication</strong> y máquinas virtuales <strong>Hyper-V</strong>.</li>
+                            <li>Administración de sistemas de almacenamiento NAS empresarial <strong>QNAP</strong>.</li>
+                            <li>Soporte técnico integral a usuarios de nivel local y remoto, diagnóstico de hardware y despliegue de estaciones de trabajo.</li>
                         </ul>
+                        <div class="tech-chips">
+                            <span class="tech-chip">Windows Server</span>
+                            <span class="tech-chip">SQL Server</span>
+                            <span class="tech-chip">Veeam Backup</span>
+                            <span class="tech-chip">Hyper-V</span>
+                            <span class="tech-chip">QNAP NAS</span>
+                            <span class="tech-chip">Soporte TI</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Técnico en Mantenimiento</h3>
-                        <p class="company">SONDA del Ecuador</p>
-                        <span class="period">Diciembre 2011 - Diciembre 2012</span>
-                        <ul>
-                            <li>Soporte técnico y mantenimiento preventivo de equipos</li>
-                            <li>Gestión de garantías y reparación de hardware</li>
-                            <li>Atención directa a usuarios finales</li>
+                <!-- Experiencia 2: SONDA del Ecuador -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Técnico en Mantenimiento</h3>
+                                <div class="company-name">🏢 SONDA del Ecuador</div>
+                            </div>
+                            <span class="timeline-period">Diciembre 2011 — Diciembre 2012</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Soporte técnico y mantenimiento preventivo/correctivo a parques informáticos de gran volumen.</li>
+                            <li>Gestión y tramitación de garantías de hardware con fabricantes autorizados.</li>
+                            <li>Atención directa y resolución de incidencias en sitio a usuarios corporativos.</li>
                         </ul>
+                        <div class="tech-chips">
+                            <span class="tech-chip">Mantenimiento Correctivo</span>
+                            <span class="tech-chip">Diagnóstico Hardware</span>
+                            <span class="tech-chip">Garantías</span>
+                            <span class="tech-chip">Soporte en Sitio</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Analista Técnico</h3>
-                        <p class="company">Farcomed (FYBECA)</p>
-                        <span class="period">Noviembre 2009 - Octubre 2011</span>
-                        <ul>
-                            <li>Mantenimiento correctivo de equipos de cómputo</li>
-                            <li>Instalación y configuración de servidores y equipos especializados</li>
-                            <li>Soporte técnico a nivel empresarial</li>
+                <!-- Experiencia 3: Farcomed (FYBECA) -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Analista Técnico</h3>
+                                <div class="company-name">🏢 Farcomed (FYBECA)</div>
+                            </div>
+                            <span class="timeline-period">Noviembre 2009 — Octubre 2011</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Mantenimiento correctivo de sistemas de cómputo y estaciones de punto de venta.</li>
+                            <li>Instalación, puesta a punto y configuración de servidores y equipamiento especializado.</li>
+                            <li>Soporte de nivel empresarial garantizando continuidad en puntos críticos.</li>
                         </ul>
+                        <div class="tech-chips">
+                            <span class="tech-chip">Servidores</span>
+                            <span class="tech-chip">Equipos Especializados</span>
+                            <span class="tech-chip">Soporte Corporativo</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <h3>Técnico</h3>
-                        <p class="company">EBC - Coca Cola</p>
-                        <span class="period">Noviembre 2007 - Noviembre 2008</span>
-                        <ul>
-                            <li>Soporte en aplicaciones empresariales: Basis, Sigma, Lotus Notes</li>
-                            <li>Gestión de backups en tiempo real</li>
-                            <li>Desarrollo de soluciones tecnológicas</li>
+                <!-- Experiencia 4: EBC - Coca Cola -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Técnico TI</h3>
+                                <div class="company-name">🏢 EBC — Coca Cola</div>
+                            </div>
+                            <span class="timeline-period">Noviembre 2007 — Noviembre 2008</span>
+                        </div>
+                        <ul class="timeline-responsibilities">
+                            <li>Soporte técnico en aplicaciones empresariales críticas (Basis, Sigma, Lotus Notes).</li>
+                            <li>Gestión y verificación de respaldos de datos en tiempo real.</li>
+                            <li>Colaboración en la implementación y desarrollo de soluciones tecnológicas internas.</li>
                         </ul>
+                        <div class="tech-chips">
+                            <span class="tech-chip">Lotus Notes</span>
+                            <span class="tech-chip">Backups Tiempo Real</span>
+                            <span class="tech-chip">Aplicaciones Empresariales</span>
+                        </div>
                     </div>
                 </div>
+
             </div>
-        </section>
-    </div>
-
-    <!-- Education Section (Alternate Background) -->
-    <div class="section-2">
-        <div class="container">
-            <section id="education">
-                <h2 class="section-title"><span class="icon">🎓</span> Educación y Certificaciones</h2>
-            
-            <div class="education-grid" style="margin-bottom: 40px;">
-                <div class="education-card fade-in">
-                    <h3>📚 Desarrollo de Software</h3>
-                    <p class="institution">Instituto Superior Tecnológico Bolivariano De Tecnología</p>
-                    <p class="year">2024 - Presente (En Curso)</p>
-                </div>
-                <div class="education-card fade-in">
-                    <h3>📚 Programador en Sistemas</h3>
-                    <p class="institution">ESPOL</p>
-                    <p class="year">2003 (Abandonado)</p>
-                </div>
-            </div>
-
-            <h3 style="margin-bottom: 20px; color: var(--text-primary);">🏆 Certificaciones y Cursos</h3>
-            <div class="certifications-list fade-in">
-                <div class="certification-item">
-                    <span class="icon">✅</span>
-                    <span>VEEAM Backup & Replication V12 Administration - Udemy</span>
-                    <span class="year">2024</span>
-                </div>
-                <div class="certification-item">
-                    <span class="icon">✅</span>
-                    <span>Windows Server 2019 Administration - Udemy</span>
-                    <span class="year">2023</span>
-                </div>
-                <div class="certification-item">
-                    <span class="icon">✅</span>
-                    <span>Arquitectura de Redes - Udemy</span>
-                    <span class="year">2023</span>
-                </div>
-                <div class="certification-item">
-                    <span class="icon">✅</span>
-                    <span>Virtualización con Hyper-V en Windows Server - Udemy</span>
-                    <span class="year">2022</span>
-                </div>
-                <div class="certification-item">
-                    <span class="icon">✅</span>
-                    <span>Certificación de Equipo HP</span>
-                    <span class="year">-</span>
-                </div>
-            </div>
-        </section>
         </div>
-    </div>
+    </section>
 
-    <!-- Skills Levels Section -->
-    <div class="container">
-        <section id="skills-levels">
-            <h2 class="section-title"><span class="icon">🌟</span> Habilidades Técnicas</h2>
-            <div class="skills-levels">
-                <div class="level-card intermedio fade-in">
-                    <h3>Nivel Intermedio</h3>
-                    <ul>
-                        <li>Office Suite</li>
-                        <li>Herramientas Gráficas</li>
-                        <li>Software de Gestión</li>
-                        <li>Windows Server Administration</li>
-                        <li>HP Equipment Management</li>
-                    </ul>
+    <!-- Education & Certifications Section -->
+    <section class="edu-cert-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Formación & Aprendizaje</span>
+                <h2 class="section-title">
+                    <span class="section-icon">🎓</span> Educación y Certificaciones
+                </h2>
+                <p class="section-desc">Capacitación académica formal y certificaciones internacionales para mantenerse a la vanguardia tecnológica.</p>
+            </div>
+
+            <!-- Formación Académica -->
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <div class="edu-icon-box">📚</div>
+                    <div>
+                        <h3 class="edu-degree">Desarrollo de Software</h3>
+                        <p class="edu-institution">Instituto Superior Tecnológico Bolivariano De Tecnología</p>
+                        <span class="edu-status">2024 — Presente (En Curso)</span>
+                    </div>
                 </div>
 
-                <div class="level-card basico fade-in">
-                    <h3>Nivel Básico</h3>
-                    <ul>
-                        <li>HTML5, CSS3, Python, Java</li>
-                        <li>Adobe Illustrator, Photoshop, After Effects</li>
-                        <li>Affinity Designer</li>
-                        <li>Desarrollo de Software</li>
-                        <li>Inglés (Escrito y Oral)</li>
-                    </ul>
-                </div>
-
-                <div class="level-card especialidades fade-in">
-                    <h3>Especialidades</h3>
-                    <ul>
-                        <li>Administración Windows Server 2019</li>
-                        <li>Administración Hyper-V Windows Server</li>
-                        <li>Software de Edición de Audio y Video</li>
-                        <li>Sistemas Operativos multiplataforma</li>
-                    </ul>
+                <div class="edu-card reveal">
+                    <div class="edu-icon-box">💻</div>
+                    <div>
+                        <h3 class="edu-degree">Programador en Sistemas</h3>
+                        <p class="edu-institution">Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                        <span class="edu-status" style="background: rgba(100, 116, 139, 0.1); color: var(--text-muted); border-color: rgba(100, 116, 139, 0.2);">Formación Inicial (2003)</span>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <!-- Quote Section (Alternate Background) -->
-    <div class="section-3">
-        <div class="container">
-            <section id="objective">
-                <div class="quote-section fade-in">
-                    <blockquote>
-                        Busco oportunidades que me desafíen y me permitan crecer profesionalmente en un entorno dinámico y colaborativo.
-                    </blockquote>
+            <!-- Certificaciones Oficiales -->
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin-bottom: 20px;">
+                🏆 Certificaciones & Cursos Especializados
+            </h3>
+
+            <div class="cert-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-info">
+                        <span class="cert-badge-icon">🛡️</span>
+                        <div>
+                            <div class="cert-title">VEEAM Backup & Replication V12 Administration</div>
+                            <div class="cert-issuer">Udemy Professional Certificate</div>
+                        </div>
+                    </div>
+                    <span class="cert-year">2024</span>
                 </div>
-            </section>
+
+                <div class="cert-card reveal">
+                    <div class="cert-info">
+                        <span class="cert-badge-icon">🖥️</span>
+                        <div>
+                            <div class="cert-title">Windows Server 2019 Administration</div>
+                            <div class="cert-issuer">Udemy Professional Certificate</div>
+                        </div>
+                    </div>
+                    <span class="cert-year">2023</span>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-info">
+                        <span class="cert-badge-icon">🌐</span>
+                        <div>
+                            <div class="cert-title">Arquitectura de Redes y Conectividad</div>
+                            <div class="cert-issuer">Udemy Professional Certificate</div>
+                        </div>
+                    </div>
+                    <span class="cert-year">2023</span>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-info">
+                        <span class="cert-badge-icon">☁️</span>
+                        <div>
+                            <div class="cert-title">Virtualización con Hyper-V en Windows Server</div>
+                            <div class="cert-issuer">Udemy Professional Certificate</div>
+                        </div>
+                    </div>
+                    <span class="cert-year">2022</span>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-info">
+                        <span class="cert-badge-icon">🔧</span>
+                        <div>
+                            <div class="cert-title">Certificación de Equipos & Hardware HP</div>
+                            <div class="cert-issuer">HP Technical Specialization</div>
+                        </div>
+                    </div>
+                    <span class="cert-year">Certificado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Banner -->
+    <div class="container">
+        <div class="quote-banner reveal">
+            <blockquote>
+                "Busco oportunidades que me desafíen y me permitan crecer profesionalmente en un entorno dinámico, colaborativo y de alto impacto tecnológico."
+            </blockquote>
+            <p>— Leonel Rubira Quimi</p>
         </div>
     </div>
 
     <!-- Contact Section -->
-    <div class="container">
-        <section id="contact">
-            <h2 class="section-title"><span class="icon">📊</span> Información Personal</h2>
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conectemos</span>
+                <h2 class="section-title">
+                    <span class="section-icon">📬</span> Información de Contacto
+                </h2>
+                <p class="section-desc">¿Tienes un proyecto, vacante o consulta técnica? No dudes en escribirme directamente.</p>
+            </div>
+
+            <!-- Contact Cards -->
             <div class="contact-grid">
-                <div class="contact-item fade-in">
-                    <div class="icon">📱</div>
-                    <div class="info">
-                        <div class="label">Teléfono</div>
-                        <div class="value">+593990122347</div>
+                <div class="contact-card reveal" onclick="copyToClipboard('+593990122347', 'Teléfono')" style="cursor:pointer;" title="Click para copiar número">
+                    <div class="contact-icon-box">📱</div>
+                    <div class="contact-details">
+                        <div class="contact-label">Teléfono Móvil</div>
+                        <div class="contact-value">+593 99 012 2347</div>
                     </div>
                 </div>
-                <div class="contact-item fade-in">
-                    <div class="icon">📧</div>
-                    <div class="info">
-                        <div class="label">Email</div>
-                        <div class="value">yaba09@gmail.com</div>
+
+                <div class="contact-card reveal" onclick="copyToClipboard('yaba09@gmail.com', 'Correo')" style="cursor:pointer;" title="Click para copiar email">
+                    <div class="contact-icon-box">📧</div>
+                    <div class="contact-details">
+                        <div class="contact-label">Correo Electrónico</div>
+                        <div class="contact-value">yaba09@gmail.com</div>
                     </div>
                 </div>
-                <div class="contact-item fade-in">
-                    <div class="icon">📍</div>
-                    <div class="info">
-                        <div class="label">Ubicación</div>
-                        <div class="value">Guayaquil, Guayas, Ecuador</div>
+
+                <div class="contact-card reveal">
+                    <div class="contact-icon-box">📍</div>
+                    <div class="contact-details">
+                        <div class="contact-label">Ubicación</div>
+                        <div class="contact-value">Guayaquil, Guayas, Ecuador</div>
                     </div>
                 </div>
-                <div class="contact-item fade-in">
-                    <div class="icon">🎂</div>
-                    <div class="info">
-                        <div class="label">Fecha de Nacimiento</div>
-                        <div class="value">02-10-1982</div>
+
+                <div class="contact-card reveal">
+                    <div class="contact-icon-box">🎂</div>
+                    <div class="contact-details">
+                        <div class="contact-label">Fecha de Nacimiento</div>
+                        <div class="contact-value">02 de Octubre, 1982</div>
                     </div>
                 </div>
             </div>
 
-            <h2 class="section-title" style="justify-content: center;"><span class="icon">🤝🏻</span> Conecta Conmigo</h2>
-            <div class="social-links">
-                <a href="mailto:yaba09@gmail.com" class="social-link">
-                    <span class="icon">✉️</span>
-                    <span>Email</span>
-                </a>
-                <a href="https://wa.me/+593990122347" class="social-link">
-                    <span class="icon">💬</span>
-                    <span>WhatsApp</span>
-                </a>
-                <a href="tel:+593990122347" class="social-link">
-                    <span class="icon">📞</span>
-                    <span>Llamar</span>
-                </a>
+            <!-- Direct Action Buttons -->
+            <div class="direct-actions-wrapper reveal">
+                <h3 class="direct-actions-title">¿Listo para conectar?</h3>
+                <p class="direct-actions-subtitle">Elige el canal de tu preferencia para iniciar una conversación inmediata.</p>
+                <div class="social-buttons-grid">
+                    <a href="https://wa.me/593990122347" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp">
+                        <span>💬</span>
+                        <span>Enviar WhatsApp</span>
+                    </a>
+                    <a href="mailto:yaba09@gmail.com" class="social-btn email">
+                        <span>✉️</span>
+                        <span>Enviar Email</span>
+                    </a>
+                    <a href="tel:+593990122347" class="social-btn">
+                        <span>📞</span>
+                        <span>Llamar por Teléfono</span>
+                    </a>
+                    <a href="https://github.com/leonelrubira" target="_blank" rel="noopener noreferrer" class="social-btn github">
+                        <span>🐙</span>
+                        <span>Perfil en GitHub</span>
+                    </a>
+                </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <p class="tagline">💼 Profesional en TI | 🖥️ Administración de Servidores | ☁️ Virtualización | 💾 Respaldos Empresariales</p>
-        <p class="subtitle">Más de 10 años de experiencia proporcionando soluciones tecnológicas confiables</p>
-        
-        <div class="stats">
-            <img src="https://komarev.com/ghpvc/?username=leonelrubira&label=Visitas%20al%20Perfil&color=ff7b5c&style=flat" alt="Profile views">
-        </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-brand">Leonel Rubira Quimi</div>
+            <p class="footer-tagline">
+                💼 Profesional TI | 🖥️ Administración Windows Server & Hyper-V | 💾 Respaldos Veeam | 📱 Desarrollo de Software
+            </p>
+            
+            <div class="footer-stats">
+                <img src="https://komarev.com/ghpvc/?username=leonelrubira&label=Visitas%20al%20Perfil&color=0284c7&style=flat-square" alt="Contador de Visitas" style="display:inline-block; border-radius:4px;">
+            </div>
 
-        <div class="credit">
-            <p>Creado por <a href="https://github.com/leonelrubira">Leonel Rubira Quimi</a></p>
-            <p>Última actualización: 06/11/2025</p>
+            <div class="footer-bottom">
+                <div>© 2026 Leonel Rubira Quimi. Todos los derechos reservados.</div>
+                <div>Actualizado: Agosto 2026</div>
+            </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" onclick="scrollToTop()" aria-label="Volver arriba">
+        ↑
+    </button>
+
+    <!-- Toast Notification (Copy feedback) -->
+    <div class="toast" id="toast">Copiado al portapapeles</div>
+
+    <!-- Interactive JavaScript -->
     <script>
-        // Dark Mode Toggle
+        // Theme Toggle (Dark/Light Mode)
         function toggleTheme() {
             const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme');
+            const currentTheme = html.getAttribute('data-theme') || 'light';
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
-            const toggleLabel = document.querySelector('.theme-toggle .label');
-            toggleLabel.textContent = newTheme === 'dark' ? 'Modo Claro' : 'Modo Oscuro';
+            updateThemeLabel(newTheme);
         }
 
-        // Load saved theme
-        document.addEventListener('DOMContentLoaded', () => {
+        function updateThemeLabel(theme) {
+            const label = document.getElementById('theme-label');
+            if (label) {
+                label.textContent = theme === 'dark' ? 'Claro' : 'Oscuro';
+            }
+        }
+
+        // Initialize Theme from localStorage
+        (function initTheme() {
             const savedTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-theme', savedTheme);
-            
-            if (savedTheme === 'dark') {
-                document.querySelector('.theme-toggle .label').textContent = 'Modo Claro';
-            }
+            document.addEventListener('DOMContentLoaded', () => {
+                updateThemeLabel(savedTheme);
+            });
+        })();
 
-            // Typing animation
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav-links');
+            if (nav) {
+                nav.classList.toggle('open');
+            }
+        }
+
+        // Close Mobile Menu on Click outside or on link
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const nav = document.getElementById('nav-links');
+                    if (nav && nav.classList.contains('open')) {
+                        nav.classList.remove('open');
+                    }
+                });
+            });
+
+            // Typing Animation
             const typingTexts = [
                 'Analista de Soporte Técnico',
-                'Especialista en Windows Server',
-                'Administrador de Infraestructura TI',
-                '10+ Años de Experiencia'
+                'Especialista en Windows Server & Hyper-V',
+                'Gestión de Respaldos con Veeam Backup',
+                'Desarrollo de Software & Android Studio',
+                'Más de 10 Años de Experiencia TI'
             ];
             
             let textIndex = 0;
@@ -613,6 +755,7 @@
             const typingElement = document.getElementById('typing-text');
             
             function type() {
+                if (!typingElement) return;
                 const currentText = typingTexts[textIndex];
                 
                 if (isDeleting) {
@@ -623,15 +766,15 @@
                     charIndex++;
                 }
                 
-                let typeSpeed = isDeleting ? 50 : 100;
+                let typeSpeed = isDeleting ? 40 : 80;
                 
                 if (!isDeleting && charIndex === currentText.length) {
-                    typeSpeed = 2000;
+                    typeSpeed = 2200;
                     isDeleting = true;
                 } else if (isDeleting && charIndex === 0) {
                     isDeleting = false;
                     textIndex = (textIndex + 1) % typingTexts.length;
-                    typeSpeed = 500;
+                    typeSpeed = 400;
                 }
                 
                 setTimeout(type, typeSpeed);
@@ -639,22 +782,59 @@
             
             type();
 
-            // Fade in on scroll
-            const fadeElements = document.querySelectorAll('.fade-in');
-            
-            const observer = new IntersectionObserver((entries) => {
+            // Scroll Reveal Observer
+            const revealElements = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
+                        entry.target.classList.add('active');
                     }
                 });
             }, {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
+                threshold: 0.12,
+                rootMargin: '0px 0px -40px 0px'
             });
-            
-            fadeElements.forEach(el => observer.observe(el));
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // Back to Top Visibility on Scroll
+            const backToTopBtn = document.getElementById('back-to-top');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    backToTopBtn?.classList.add('visible');
+                } else {
+                    backToTopBtn?.classList.remove('visible');
+                }
+            });
         });
+
+        // Scroll to Top smoothly
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Copy to Clipboard Utility with Toast
+        function copyToClipboard(text, labelName) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`¡${labelName} copiado: ${text}!`);
+            }).catch(() => {
+                showToast(`Copiado: ${text}`);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            if (toast) {
+                toast.textContent = message;
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            }
+        }
     </script>
 </body>
 </html>
