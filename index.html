@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
                 </a>
                 <button class="theme-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema claro u oscuro">
                     <span class="icon">🌓</span>
-                    <span class="label" id="theme-label">Oscuro</span>
+                    <span class="label" id="theme-label">Claro</span>
                 </button>
                 <button class="menu-toggle" id="menu-toggle" onclick="toggleMobileMenu()" aria-label="Abrir menú de navegación">
                     ☰
@@ -696,7 +696,7 @@
         // Theme Toggle (Dark/Light Mode)
         function toggleTheme() {
             const html = document.documentElement;
-            const currentTheme = html.getAttribute('data-theme') || 'light';
+            const currentTheme = html.getAttribute('data-theme') || 'dark';
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
             html.setAttribute('data-theme', newTheme);
@@ -711,9 +711,9 @@
             }
         }
 
-        // Initialize Theme from localStorage
+        // Initialize Theme from localStorage (Default: dark)
         (function initTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'light';
+            const savedTheme = localStorage.getItem('theme') || 'dark';
             document.documentElement.setAttribute('data-theme', savedTheme);
             document.addEventListener('DOMContentLoaded', () => {
                 updateThemeLabel(savedTheme);
